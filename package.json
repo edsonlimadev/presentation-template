@@ -1,0 +1,11 @@
+{
+  "name": "taxman-talk",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-pug": "4.0.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.1",
+    "webpack-stream": "5.1.1",
+    "reveal": "0.0.4"
+  }
+}

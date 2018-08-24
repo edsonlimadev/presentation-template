@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Apresentação Taxman
+ 
+    meta( name="description", content="Apresentação Taxman" )
+    meta( name="author", content="Edson Lima" )
+
+    link( rel="stylesheet", href="/assets/reveal.js/css/reveal.css" )
+    link( rel="stylesheet", href="/assets/reveal.js/css/theme/black.css" )
+    link( rel="stylesheet", href="/assets/reveal.js/lib/css/zenburn.css" )
+    link( rel="stylesheet", href="/styles.css" )
+
+  body
+    .reveal
+      .slides
+        block content
+
+    script( src="assets/reveal.js/lib/js/head.min.js" )
+    script( src="assets/reveal.js/js/reveal.js" )
+    script.
+      Reveal.initialize({
+        history:true,
+        dependencies:[
+          { src:'assets/reveal.js/plugin/markdown/marked.js' },
+          { src:'assets/reveal.js/plugin/markdown/markdown.js' },
+          { src:'assets/reveal.js/plugin/notes/notes.js', async:true },
+          { src:'assets/reveal.js/plugin/highlight/highlight.js', async:true, callback:function () { 
+            hljs.initHighlightingOnLoad(); 
+          }}
+        ]
+      });
+    script( src="/main.js" )
